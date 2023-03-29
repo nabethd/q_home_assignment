@@ -1,0 +1,42 @@
+.user-line{
+    margin-top: 23px;
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+
+}
+.user-avatar-skeleton{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background: #E4E5E7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 14px;
+}
+.user-name-skeleton{
+    width: 86px;
+    height: 24px;
+    background: linear-gradient(270deg, #DBD8D8 -235.8%, #CBCBCB -184.24%, #DBD7D7 -135.8%);
+    border-radius: 4px;
+    margin-right: 40px;
+
+}
+
+.user-email-skeleton{
+    width: 162px;
+    height: 24px;
+    background: linear-gradient(270deg, #DBD8D8 -235.8%, #CBCBCB -184.24%, #DBD7D7 -135.8%);
+    border-radius: 4px;
+    margin-right: 140px;
+
+}
+.user-status-skeleton{
+    width: 115px;
+    height: 24px;
+    background: linear-gradient(270deg, #DBD8D8 -235.8%, #CBCBCB -184.24%, #DBD7D7 -135.8%);
+    border-radius: 4px;
+    margin-right: 140px;
+
+}

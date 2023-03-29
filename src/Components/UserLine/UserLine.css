@@ -1,0 +1,20 @@
+.user-line{
+    margin-top: 23px;
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
+
+}
+.user-avatar{
+    margin-right: 14px;
+}
+.user-name{
+    width: 140px;
+}
+
+.user-email{
+    width: 300px;
+}
+.user-status{
+    width: 190px;
+}

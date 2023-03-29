@@ -1,0 +1,35 @@
+
+.search-and-invite-container{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+}
+.search-input{
+    height: 50px;
+    width: 384px;
+    border-radius: 6px;
+    padding: 0 12px 0 12px;
+
+
+}
+.search-input:focus {
+        border: 1px solid #262FFC;
+
+}.search-input:active {
+     outline: none !important;
+    border-color: #262FFC !important;
+
+
+}
+
+ .invite-button{
+     margin-left: 309px;
+     width: 127px;
+     height: 40px;
+     border: 1px solid rgba(0, 2, 43, 0.12);
+     border-radius: 4px;
+     background-color: #FFFFFF;;
+
+ }
+
