@@ -1,6 +1,8 @@
 import React from "react";
 import TextField from '@mui/material/TextField';
 import './SearchAndInvite.css'
+import {Button} from "@mui/material";
+import PlusIcon from "@mui/icons-material/Add";
 const SearchAndInvite = ({query, handelSearch}) =>{
 
     return <div className="search-and-invite-container">
@@ -11,7 +13,17 @@ const SearchAndInvite = ({query, handelSearch}) =>{
             onChange={ event=> handelSearch(event.target.value)}
             value={query}
         />
-        <button className='invite-button' onClick={()=>{} }>+ Invite people</button>
+        <div  className='invite-button'>
+        <Button
+                sx={{ color: 'Black', borderColor: 'black' }}
+                variant="outlined"
+                onClick={ () => {}}
+                size="small"
+                startIcon={<PlusIcon />}
+        >
+            Invite people
+        </Button>
+        </div>
     </div>
 
 }

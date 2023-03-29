@@ -1,9 +1,17 @@
 import React from "react";
 import './Summary.css'
-const Summary = ({users, isLoading}) =>{
+const Summary = ({users, isLoading, isError}) =>{
 
     let approved = 0;
     let pending = 0;
+    let isLoadingOrError
+
+    if(isLoading){
+        isLoadingOrError = <div className='users-box-skeleton' />
+    }
+    else if(isError){
+        isLoadingOrError = <h2 > -- </h2 >
+    }
 
     for (let user of users) {
         if(user.status === 'approved'){
@@ -17,11 +25,11 @@ const Summary = ({users, isLoading}) =>{
     return (
      <div className='summary-container'>
         <div className='users-box'>
-            {isLoading? <div className='users-box-skeleton' /> : <h2 > {approved} </h2>}
+            {isLoadingOrError || <h2 > {approved} </h2>}
             <h4> Active</h4>
         </div>
         <div className='users-box'>
-            {isLoading?  <div className='users-box-skeleton' /> :  <h2 > {pending} </h2>}
+            {isLoadingOrError ||  <h2 > {pending} </h2>}
             <h4> pending</h4>
         </div>
     </div>)

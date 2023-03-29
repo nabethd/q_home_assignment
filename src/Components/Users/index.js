@@ -3,13 +3,13 @@ import axios from "axios";
 import Summary from "../Summary";
 import { useQuery } from "react-query";
 import SearchAndInvite from "../SearchAndInvite";
-import './Users.css'
 import UsersTable from "../UsersTable";
+import './Users.css'
 const Users = () =>{
     const [users, setUsers] = useState([])
     const [filterdUser, setFilterdUser] = useState([])
     const [query, setQuery] = useState("")
-    const { isLoading, error } = useQuery(["repo"], () =>
+    const { isLoading, refetch, isError } = useQuery(["users"], () =>
              axios
                 .get("https://voicetest20202.s3.amazonaws.com/users.json")
                 .then((res) => {
@@ -21,7 +21,6 @@ const Users = () =>{
         console.log( "Loading...");
     }
 
-    if (error) console.log( "An error has occurred: " + error.message);
     const handelSearch = (query) =>{
         setQuery(query)
         setFilterdUser(
@@ -37,9 +36,15 @@ const Users = () =>{
     }
 
     return <div className='users-container'>
-        <Summary users={users} isLoading={isLoading}/>
+        <Summary users={users} isLoading={isLoading} isError={isError}/>
         <SearchAndInvite query={query} setQuery={setQuery} handelSearch={handelSearch}/>
-        <UsersTable users={filterdUser} setUsers={setUsers} handleDelete={handleDelete} isLoading={isLoading}/>
+        <UsersTable
+            users={filterdUser}
+            handleDelete={handleDelete}
+            isLoading={isLoading}
+            isError={isError}
+            refetch={refetch}
+        />
     </div>
 
 }

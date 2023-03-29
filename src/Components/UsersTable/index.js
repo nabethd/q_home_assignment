@@ -1,12 +1,24 @@
 import React from "react";
-import './UsersTable.css'
 import Divider from "../Divider";
 import UserLine from "../UserLine";
 import UserLineSkeleton from "../UserLineSkeleton";
-const UsersTable = ({users, handleDelete, isLoading}) =>{
+import broken from "../../broken.svg";
+import './UsersTable.css'
+const UsersTable = ({users, handleDelete, isLoading, isError, refetch}) =>{
 
     let displayUsersRow;
-    if(isLoading){
+    if(isError){
+        displayUsersRow = <div className='users-error'>
+            <img className='broken-svg' src={broken} alt="broken svg" />
+            <div className='broken-text'>
+                Something went wrong.
+            </div>
+            <div className='try-again-text' onClick={()=>refetch()}>
+                Try again
+            </div>
+        </div>
+    }
+    else if(isLoading){
         displayUsersRow = <>
             <UserLineSkeleton/>
             <UserLineSkeleton/>
