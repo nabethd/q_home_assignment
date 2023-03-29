@@ -9,7 +9,8 @@ const SearchAndInvite = ({query, handelSearch}) =>{
             className='search-input'
             placeholder="Search members"
             onChange={ event=> handelSearch(event.target.value)}
-            value={query}/>
+            value={query}
+        />
         <button className='invite-button' onClick={()=>{} }>+ Invite people</button>
     </div>
 

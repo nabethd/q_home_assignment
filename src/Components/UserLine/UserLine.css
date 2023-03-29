@@ -1,9 +1,12 @@
 .user-line{
-    margin-top: 23px;
-    margin-bottom: 21px;
+    padding-top: 23px;
+    padding-bottom: 21px;
     display: flex;
     align-items: center;
 
+}
+.user-line:hover{
+    background:#F9FAFB;
 }
 .user-avatar{
     margin-right: 14px;
@@ -17,4 +20,7 @@
 }
 .user-status{
     width: 190px;
+}
+.delete-user-button{
+    margin-right: 8px;
 }

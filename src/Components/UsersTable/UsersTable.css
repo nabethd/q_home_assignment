@@ -1,12 +1,19 @@
 
 .users-table{
-    width: 447px;
 
+}
+.users-table-body::-webkit-scrollbar {
+    display: none;
+}
+.users-table-body{
+    max-height: 550px;
+    overflow-y: scroll;
 }
 .header-table{
     display: flex;
     margin-top: 23px;
     margin-bottom: 21px;
+    position: sticky;
 }
 .name-header{
     width: 200px;

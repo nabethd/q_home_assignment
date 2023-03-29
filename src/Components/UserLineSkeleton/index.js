@@ -5,7 +5,7 @@ import './UserLineSkeleton.css'
 const UserLineSkeleton = () =>{
 
     return <>
-        <tr className="user-line">
+        <tr className="user-line-skeleton">
         <td className='user-avatar-skeleton'>
         </td>
         <td className='user-name-skeleton'>

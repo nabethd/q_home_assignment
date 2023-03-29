@@ -21,8 +21,8 @@ const UserLine = ({user, handleDelete}) =>{
             <td className='user-status'>
                 {user.status}
             </td>
-            <td>
-                <Button variant="outlined" onClick={ () => handleDelete(user.email)} startIcon={<DeleteIcon />}>
+            <td className='delete-user-button'>
+                <Button sx={{ color: 'grey' }} variant="Text" onClick={ () => handleDelete(user.email)} startIcon={<DeleteIcon />}>
                     Delete
                 </Button>
             </td>
