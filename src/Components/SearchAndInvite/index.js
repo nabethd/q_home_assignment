@@ -18,4 +18,3 @@ const SearchAndInvite = ({query, handelSearch}) =>{
 export default SearchAndInvite
 
 //todo can add the search svg to input
-//todo bag with the border color that doesnt change on focus
