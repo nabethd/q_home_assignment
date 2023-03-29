@@ -1,26 +1,25 @@
-.user-line{
-    padding-top: 23px;
-    padding-bottom: 21px;
-    display: flex;
-    align-items: center;
+.user-line {
+  padding-top: 23px;
+  padding-bottom: 21px;
+  display: flex;
+  align-items: center;
+}
+.user-line:hover {
+  background: #f9fafb;
+}
+.user-avatar {
+  margin-right: 14px;
+}
+.user-name {
+  width: 140px;
+}
 
+.user-email {
+  width: 300px;
 }
-.user-line:hover{
-    background:#F9FAFB;
+.user-status {
+  width: 190px;
 }
-.user-avatar{
-    margin-right: 14px;
-}
-.user-name{
-    width: 140px;
-}
-
-.user-email{
-    width: 300px;
-}
-.user-status{
-    width: 190px;
-}
-.delete-user-button{
-    margin-right: 8px;
+.delete-user-button {
+  margin-right: 8px;
 }

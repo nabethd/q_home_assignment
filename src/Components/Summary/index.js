@@ -1,39 +1,37 @@
 import React from "react";
-import './Summary.css'
-const Summary = ({users, isLoading, isError}) =>{
+import "./Summary.css";
+const Summary = ({ users, isLoading, isError }) => {
+  let approved = 0;
+  let pending = 0;
+  let isLoadingOrError;
 
-    let approved = 0;
-    let pending = 0;
-    let isLoadingOrError
+  if (isLoading) {
+    isLoadingOrError = <div className="users-box-skeleton" />;
+  } else if (isError) {
+    isLoadingOrError = <h2> -- </h2>;
+  }
 
-    if(isLoading){
-        isLoadingOrError = <div className='users-box-skeleton' />
+  for (let user of users) {
+    if (user.status === "approved") {
+      approved++;
     }
-    else if(isError){
-        isLoadingOrError = <h2 > -- </h2 >
+    if (user.status === "pending") {
+      pending++;
     }
+  }
 
-    for (let user of users) {
-        if(user.status === 'approved'){
-            approved++;
-        }
-        if(user.status === 'pending'){
-            pending++;
-        }
-    }
+  return (
+    <div className="summary-container">
+      <div className="users-box">
+        {isLoadingOrError || <h2> {approved} </h2>}
+        <h4> Active</h4>
+      </div>
+      <div className="users-box">
+        {isLoadingOrError || <h2> {pending} </h2>}
+        <h4> pending</h4>
+      </div>
+    </div>
+  );
+};
 
-    return (
-     <div className='summary-container'>
-        <div className='users-box'>
-            {isLoadingOrError || <h2 > {approved} </h2>}
-            <h4> Active</h4>
-        </div>
-        <div className='users-box'>
-            {isLoadingOrError ||  <h2 > {pending} </h2>}
-            <h4> pending</h4>
-        </div>
-    </div>)
-
-}
-
-export default Summary
+export default Summary;

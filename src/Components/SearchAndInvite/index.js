@@ -1,33 +1,34 @@
 import React from "react";
-import TextField from '@mui/material/TextField';
-import './SearchAndInvite.css'
-import {Button} from "@mui/material";
+import TextField from "@mui/material/TextField";
+import { Button } from "@mui/material";
 import PlusIcon from "@mui/icons-material/Add";
-const SearchAndInvite = ({query, handelSearch}) =>{
-
-    return <div className="search-and-invite-container">
-        <TextField
-            id="outlined-basic" label="Search members"
-            className='search-input'
-            placeholder="Search members"
-            onChange={ event=> handelSearch(event.target.value)}
-            value={query}
-        />
-        <div  className='invite-button'>
+import "./SearchAndInvite.css";
+const SearchAndInvite = ({ query, handelSearch }) => {
+  return (
+    <div className="search-and-invite-container">
+      <TextField
+        id="outlined-basic"
+        label="Search members"
+        className="search-input"
+        placeholder="Search members"
+        onChange={(event) => handelSearch(event.target.value)}
+        value={query}
+      />
+      <div className="invite-button">
         <Button
-                sx={{ color: 'Black', borderColor: 'black' }}
-                variant="outlined"
-                onClick={ () => {}}
-                size="small"
-                startIcon={<PlusIcon />}
+          sx={{ color: "Black", borderColor: "black" }}
+          variant="outlined"
+          onClick={() => {}}
+          size="small"
+          startIcon={<PlusIcon />}
         >
-            Invite people
+          Invite people
         </Button>
-        </div>
+      </div>
     </div>
+  );
+};
 
-}
-
-export default SearchAndInvite
+export default SearchAndInvite;
 
 //todo can add the search svg to input

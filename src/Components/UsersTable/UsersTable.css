@@ -1,52 +1,49 @@
-
-.users-table{
-
+.users-table {
 }
 .users-table-body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.users-table-body{
-    max-height: 550px;
-    overflow-y: scroll;
+.users-table-body {
+  max-height: 550px;
+  overflow-y: scroll;
 }
-.header-table{
-    display: flex;
-    margin-top: 23px;
-    margin-bottom: 21px;
-    position: sticky;
+.header-table {
+  display: flex;
+  margin-top: 23px;
+  margin-bottom: 21px;
+  position: sticky;
 }
-.name-header{
-    width: 200px;
+.name-header {
+  width: 200px;
 }
-.email-header{
-    width: 300px;
+.email-header {
+  width: 300px;
 }
-.status-header{
-    width: 200px;
+.status-header {
+  width: 200px;
 }
-.broken-text{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.15000000596046448px;
-    text-align: left;
+.broken-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: left;
 }
-.try-again-text{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0.15000000596046448px;
-    text-align: left;
-    cursor: pointer;
-    color: #3A41DF;
-
+.try-again-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: left;
+  cursor: pointer;
+  color: #3a41df;
 }
-.users-error{
-    margin-top: 22px;
-    display: flex;
-    margin-left: 250px;
-    align-items: center;
+.users-error {
+  margin-top: 22px;
+  display: flex;
+  margin-left: 250px;
+  align-items: center;
 }
-.broken-svg{
-    margin-right: 34px;
+.broken-svg {
+  margin-right: 34px;
 }

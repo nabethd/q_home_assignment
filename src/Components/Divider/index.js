@@ -1,10 +1,8 @@
 import React from "react";
-import './Divider.css'
-const Divider = () =>{
+import "./Divider.css";
 
-    return <div className='divider' />
+const Divider = () => {
+  return <div className="divider" />;
+};
 
-
-}
-
-export default Divider
+export default Divider;
