@@ -2,6 +2,8 @@ import React from "react";
 import Divider from "../Divider";
 import UserLine from "../UserLine";
 import UserLineSkeleton from "../UserLineSkeleton";
+import {Text} from "react-native";
+import {Styles} from "../../Assets/styles";
 import broken from "../../Assets/broken.svg";
 import "./UsersTable.css";
 
@@ -27,7 +29,11 @@ const UsersTable = ({users, handleDelete, isLoading, isError, refetch}) => {
         );
     } else if (users.length === 0) {
         displayUsersRow =
-            "No users found. Try a different search or Invite a Team Member";
+            <div className='users-empty'>
+                <Text style={Styles.emptySearchText}>No users found. Try a different search or
+                    Invite a Team Member.
+                </Text>
+            </div>
     } else {
         displayUsersRow = users?.map((user) => {
             return <UserLine user={user} handleDelete={handleDelete}/>;

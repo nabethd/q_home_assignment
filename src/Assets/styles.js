@@ -21,4 +21,10 @@ export const Styles = StyleSheet.create({
         fontSize: '16px',
         fontWeight: 400,
     },
+    emptySearchText: {
+        fontSize: '16px',
+        fontWeight: 400,
+        color: '#DCDCDC',
+
+    }
 });
