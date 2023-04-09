@@ -1,4 +1,5 @@
 .users-table {
+    width: 100%;
 }
 
 .users-table-body::-webkit-scrollbar {

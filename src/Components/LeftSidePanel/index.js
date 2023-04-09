@@ -1,5 +1,6 @@
 import React from "react";
 import menuDrawer from "../../Assets/Menu Drawer.svg";
+import './LeftSidePanel.css'
 
 const LeftSidePanel = () => {
     return (

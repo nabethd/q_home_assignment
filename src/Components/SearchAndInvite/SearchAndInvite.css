@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     margin-top: 16px;
+    justify-content: space-between;
 }
 
 .search-input {
@@ -18,8 +19,4 @@
 .search-input:active {
     outline: none !important;
     border-color: #262ffc !important;
-}
-
-.invite-button {
-    margin-left: 309px;
 }
