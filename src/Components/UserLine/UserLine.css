@@ -1,25 +1,34 @@
 .user-line {
-  padding-top: 23px;
-  padding-bottom: 21px;
-  display: flex;
-  align-items: center;
+    padding-top: 23px;
+    padding-bottom: 21px;
+    display: flex;
+    align-items: center;
 }
+
 .user-line:hover {
-  background: #f9fafb;
+    background: #f9fafb;
 }
+
 .user-avatar {
-  margin-right: 14px;
+    margin-right: 14px;
+    display: inline-block
 }
+
 .user-name {
-  width: 140px;
+    min-width: 140px;
+    display: inline-block
 }
 
 .user-email {
-  width: 300px;
+    min-width: 300px;
+    display: inline-block
 }
+
 .user-status {
-  width: 190px;
+    min-width: 190px;
+    display: inline-block
 }
+
 .delete-user-button {
-  margin-right: 8px;
+    margin-right: 8px;
 }

@@ -1,0 +1,5 @@
+.left-side-panel-container {
+    float: left;
+    width: 20%;
+    overflow: auto;
+}

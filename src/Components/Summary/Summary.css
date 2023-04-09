@@ -3,8 +3,8 @@
 }
 
 .users-box {
-    height: 96px;
-    width: 154px;
+    min-height: 96px;
+    min-width: 154px;
     border-radius: 12px;
     border: 1px solid #262ffc;
     margin-right: 8px;

@@ -18,15 +18,15 @@
 }
 
 .name-header {
-    width: 200px;
+    min-width: 200px;
 }
 
 .email-header {
-    width: 300px;
+    min-width: 300px;
 }
 
 .status-header {
-    width: 200px;
+    min-width: 200px;
 }
 
 .broken-text {

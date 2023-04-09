@@ -1,0 +1,6 @@
+@media only screen and (max-width: 300px) {
+    /* For mobile phones: */
+    .left-side-panel-container, .users-container {
+        width: 100%;
+    }
+}

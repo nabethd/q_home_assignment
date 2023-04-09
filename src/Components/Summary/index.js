@@ -26,12 +26,12 @@ const Summary = ({users, isLoading, isError}) => {
     return (
         <div className="summary-container">
             <div className="users-box">
-                {isLoadingOrError || <Text style={Styles.titleText}> {approved} </Text>}
+                {isLoadingOrError || <Text style={Styles.titleText}> {approved.toLocaleString()} </Text>}
                 <br/>
                 <Text style={Styles.baseText}> Active</Text>
             </div>
             <div className="users-box">
-                {isLoadingOrError || <Text style={Styles.titleText}> {pending} </Text>}
+                {isLoadingOrError || <Text style={Styles.titleText}> {pending.toLocaleString()} </Text>}
                 <br/>
                 <Text style={Styles.baseText}> pending</Text>
             </div>

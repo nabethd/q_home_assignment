@@ -1,22 +1,25 @@
 .search-and-invite-container {
-  display: flex;
-  align-items: center;
-  margin-top: 16px;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
 }
+
 .search-input {
-  height: 50px;
-  width: 384px;
-  border-radius: 6px;
-  padding: 0 12px 0 12px;
+    height: 50px;
+    min-width: 384px;
+    border-radius: 6px;
+    padding: 0 12px 0 12px;
 }
+
 .search-input:focus {
-  border: 1px solid #262ffc;
+    border: 1px solid #262ffc;
 }
+
 .search-input:active {
-  outline: none !important;
-  border-color: #262ffc !important;
+    outline: none !important;
+    border-color: #262ffc !important;
 }
 
 .invite-button {
-  margin-left: 309px;
+    margin-left: 309px;
 }

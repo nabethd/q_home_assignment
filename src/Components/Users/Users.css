@@ -1,4 +1,6 @@
 .users-container {
-  margin-top: 16px;
-  margin-left: 64px;
+    margin-top: 16px;
+    margin-left: 64px;
+    float: left;
+    width: 80%;
 }

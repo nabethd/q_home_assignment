@@ -1,53 +1,56 @@
 .user-line-skeleton {
-  margin-top: 23px;
-  margin-bottom: 21px;
-  display: flex;
-  align-items: center;
+    margin-top: 23px;
+    margin-bottom: 21px;
+    display: flex;
+    align-items: center;
 }
+
 .user-avatar-skeleton {
-  height: 40px;
-  width: 40px;
-  border-radius: 100px;
-  background: #e4e5e7;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-right: 14px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 100px;
+    background: #e4e5e7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 14px;
 }
+
 .user-name-skeleton {
-  width: 86px;
-  height: 24px;
-  background: linear-gradient(
-    270deg,
-    #dbd8d8 -235.8%,
-    #cbcbcb -184.24%,
-    #dbd7d7 -135.8%
-  );
-  border-radius: 4px;
-  margin-right: 40px;
+    width: 86px;
+    height: 24px;
+    background: linear-gradient(
+            270deg,
+            #dbd8d8 -235.8%,
+            #cbcbcb -184.24%,
+            #dbd7d7 -135.8%
+    );
+    border-radius: 4px;
+    margin-right: 40px;
 }
 
 .user-email-skeleton {
-  width: 162px;
-  height: 24px;
-  background: linear-gradient(
-    270deg,
-    #dbd8d8 -235.8%,
-    #cbcbcb -184.24%,
-    #dbd7d7 -135.8%
-  );
-  border-radius: 4px;
-  margin-right: 140px;
+    width: 162px;
+    height: 24px;
+    background: linear-gradient(
+            270deg,
+            #dbd8d8 -235.8%,
+            #cbcbcb -184.24%,
+            #dbd7d7 -135.8%
+    );
+    border-radius: 4px;
+    margin-right: 140px;
 }
+
 .user-status-skeleton {
-  width: 115px;
-  height: 24px;
-  background: linear-gradient(
-    270deg,
-    #dbd8d8 -235.8%,
-    #cbcbcb -184.24%,
-    #dbd7d7 -135.8%
-  );
-  border-radius: 4px;
-  margin-right: 140px;
+    width: 115px;
+    height: 24px;
+    background: linear-gradient(
+            270deg,
+            #dbd8d8 -235.8%,
+            #cbcbcb -184.24%,
+            #dbd7d7 -135.8%
+    );
+    border-radius: 4px;
+    margin-right: 140px;
 }
