@@ -8,7 +8,7 @@ import "./UserLine.css";
 const UserLine = ({user, handleDelete}) => {
 
     return (
-        <>
+        <div className='user-line-container'>
             <tr className="user-line">
                 <td className="user-avatar">
                     {user.img || <img src={AvatarLarge} alt="avatar svg" height={40} width={40}/>}
@@ -30,7 +30,7 @@ const UserLine = ({user, handleDelete}) => {
                 </td>
             </tr>
             <Divider/>
-        </>
+        </div>
     );
 };
 
