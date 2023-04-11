@@ -7,7 +7,7 @@
 }
 
 .users-table-body {
-    max-height: 550px;
+    max-height: 700px;
     overflow-y: scroll;
 }
 
