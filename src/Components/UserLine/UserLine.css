@@ -1,6 +1,7 @@
 .user-line {
     padding-top: 23px;
     padding-bottom: 21px;
+    padding-left: 16px;
     display: flex;
     align-items: center;
 }
